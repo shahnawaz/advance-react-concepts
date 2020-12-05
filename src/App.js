@@ -10,12 +10,14 @@ import MultipleContext from "./context/multiple-context/MultipleContext";
 import ErrorBoundary from "./error-boundary/ErrorBoundary";
 import ForwardRefsExample from "./forwarding-refs/Index";
 import RefsWithHoc from "./forwarding-refs/refs-with-hoc/RefsWithHoc";
+import CrossCuttingConcernsUsingHoc
+    from "./higher-order-components/cross-cutting-concerns/CrossCuttingConcernsUsingHoc";
 
 function App() {
   return (
     <div className="App">
         <ErrorBoundary>
-            <RefsWithHoc/>
+            <CrossCuttingConcernsUsingHoc/>
         </ErrorBoundary>
     </div>
   );
