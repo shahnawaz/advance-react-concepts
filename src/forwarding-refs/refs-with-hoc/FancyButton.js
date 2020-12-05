@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logPropsHoc from "./logProps.hoc";
 import logPropsWithForwardRefHoc from "./logPropsWithForwardRef.hoc";
 
@@ -12,11 +12,13 @@ import logPropsWithForwardRefHoc from "./logPropsWithForwardRef.hoc";
     }
 }*/
 
-const FancyButton = React.forwardRef((props, ref) => (
-    <button ref={ref} className="FancyButton" onClick={props.onClick}>
-        { props.children }
-    </button>
-))
+const FancyButton = React.forwardRef(
+    function fancyButton(props, ref) {
+        return <button ref={ref} className="FancyButtonTwo" onClick={props.onClick}>
+            { props.children }
+        </button>
+    }
+)
 
 /**
  * With HOC
