@@ -9,12 +9,13 @@ import NestedContextUpdate from "./context/nested-context-update/NestedContextUp
 import MultipleContext from "./context/multiple-context/MultipleContext";
 import ErrorBoundary from "./error-boundary/ErrorBoundary";
 import ForwardRefsExample from "./forwarding-refs/Index";
+import RefsWithHoc from "./forwarding-refs/refs-with-hoc/RefsWithHoc";
 
 function App() {
   return (
     <div className="App">
         <ErrorBoundary>
-            <ForwardRefsExample/>
+            <RefsWithHoc/>
         </ErrorBoundary>
     </div>
   );
