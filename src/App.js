@@ -12,12 +12,13 @@ import ForwardRefsExample from "./forwarding-refs/Index";
 import RefsWithHoc from "./forwarding-refs/refs-with-hoc/RefsWithHoc";
 import CrossCuttingConcernsUsingHoc
     from "./higher-order-components/cross-cutting-concerns/CrossCuttingConcernsUsingHoc";
+import { SimpleCounterWithHooks } from './hooks/basics/Examples';
 
 function App() {
   return (
     <div className="App">
         <ErrorBoundary>
-            <CrossCuttingConcernsUsingHoc/>
+            <SimpleCounterWithHooks/>
         </ErrorBoundary>
     </div>
   );
